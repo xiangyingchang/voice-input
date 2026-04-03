@@ -36,6 +36,15 @@ else
     exit 1
 fi
 
+# Copy app icon
+ICON_SOURCE="Sources/VoiceInput/Resources/AppIcon.icns"
+if [ -f "$ICON_SOURCE" ]; then
+    cp "$ICON_SOURCE" "${APP_BUNDLE}/Contents/Resources/AppIcon.icns"
+    echo "🎨 App icon copied"
+else
+    echo "⚠️  App icon not found at ${ICON_SOURCE}, skipping..."
+fi
+
 # Create PkgInfo
 echo -n "APPL????" > "${APP_BUNDLE}/Contents/PkgInfo"
 
