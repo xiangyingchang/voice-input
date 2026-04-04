@@ -164,6 +164,10 @@ If you want to contribute, useful areas include:
 - UI polish and onboarding improvements
 - Automated tests for paste and input source switching behavior
 
+### Acknowledgements
+
+- [yetone/voice-input-src](https://github.com/yetone/voice-input-src) — the original project that inspired this implementation.
+
 ### License
 
 MIT — see [`LICENSE`](LICENSE).
